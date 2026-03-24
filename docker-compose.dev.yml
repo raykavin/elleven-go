@@ -1,0 +1,22 @@
+services:
+  golang:
+    tty: true
+    container_name: dev_golang
+    restart: on-failure
+    working_dir: /workspaces/app
+    env_file: .env.dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: devcontainer
+    networks:
+      - devnet
+    volumes:
+      - ./:/workspaces/app:rw
+      - ../.docker/go/bin:/go/bin:rw
+      - ../.docker/go/pkg:/go/pkg:rw
+
+networks:
+  devnet:
+    name: devnet
+    driver: bridge
