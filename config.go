@@ -15,9 +15,9 @@ const (
 	userAgent       = "elleven-go-sdk/" + sdkVersion
 )
 
-// Config holds all configuration options for the ERPVoalle SDK client.
+// Config holds all configuration options for the ERP Elleven SDK client.
 type Config struct {
-	// BaseURL is the base URL of the ERPVoalle instance, WITHOUT port.
+	// BaseURL is the base URL of the ERP Elleven instance, WITHOUT port.
 	// Example: "https://erp.yourcompany.com" or "http://192.168.1.10"
 	//
 	// Used together with APIPort and AuthPort to construct APIURL and AuthURL.

@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-// APIError represents an error returned by the ERPVoalle API.
+// APIError represents an error returned by the ERP Elleven API.
 // It carries the HTTP status code, parsed API messages, and the raw response body.
 type APIError struct {
 	// StatusCode is the HTTP status code returned by the server.

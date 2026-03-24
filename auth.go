@@ -8,7 +8,7 @@ import (
 
 // Auth (Autenticação)
 
-// Default OAuth2 platform constants used by the ERPVoalle legacy flows.
+// Default OAuth2 platform constants used by the ERP Elleven legacy flows.
 const (
 	DefaultLegacyClientID     = "synauth"
 	DefaultLegacyClientSecret = "df956154024a425eb80f1a2fc12fef0c"
@@ -40,7 +40,7 @@ type TokenResponse struct {
 // LegacyAuthRequest holds credentials for the legacy password-based OAuth2 flow.
 //
 // The platform defaults (GrantType, Scope, ClientID, ClientSecret) are pre-filled
-// with the ERPVoalle standard values. Override them only if your environment requires
+// with the ERP Elleven standard values. Override them only if your environment requires
 // different values.
 type LegacyAuthRequest struct {
 	// GrantType defaults to "password".
@@ -49,7 +49,7 @@ type LegacyAuthRequest struct {
 	Scope string
 	// ClientID defaults to "synauth".
 	ClientID string
-	// ClientSecret defaults to the ERPVoalle platform secret.
+	// ClientSecret defaults to the ERP Elleven platform secret.
 	ClientSecret string
 	// Username is the integration user's login name.
 	Username string
@@ -63,7 +63,7 @@ type LegacyAuthRequest struct {
 //
 // ClientID and ClientSecret are obtained from the integration user record in
 // Settings / Users / "Client Id" and "Client Secret" fields.
-// GrantType and Scope default to the ERPVoalle standard values.
+// GrantType and Scope default to the ERP Elleven standard values.
 type ClientCredentialsRequest struct {
 	// GrantType defaults to "client_credentials".
 	GrantType string
@@ -79,14 +79,14 @@ type ClientCredentialsRequest struct {
 
 // RefreshTokenRequest holds the data needed to refresh an existing access token.
 //
-// GrantType, ClientID and ClientSecret default to the ERPVoalle legacy platform
+// GrantType, ClientID and ClientSecret default to the ERP Elleven legacy platform
 // values. Override them only if your environment requires different values.
 type RefreshTokenRequest struct {
 	// GrantType defaults to "refresh_token".
 	GrantType string
 	// ClientID defaults to "synauth".
 	ClientID string
-	// ClientSecret defaults to the ERPVoalle platform secret.
+	// ClientSecret defaults to the ERP Elleven platform secret.
 	ClientSecret string
 	// RefreshToken is the token obtained from a previous authentication response.
 	RefreshToken string

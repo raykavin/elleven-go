@@ -77,7 +77,7 @@ client, err := elleven.NewClient(elleven.Config{
 
 ## Authentication
 
-The ERPVoalle API uses OAuth2. Three flows are supported:
+The ERP Elleven API uses OAuth2. Three flows are supported:
 
 ### Modern client_credentials (recommended)
 

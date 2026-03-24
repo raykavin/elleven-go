@@ -1,7 +1,7 @@
-// Package elleven provides a Go SDK for the ERPVoalle Third-Party API.
+// Package elleven provides a Go SDK for the ERP Elleven Third-Party API.
 //
 // The SDK covers all documented modules: authentication, Suite (people/customers),
-// CRM Voalle, Service Desk, ISP/Telecom, Billing, Finance and Third-Party Billing.
+// CRM, Service Desk, ISP/Telecom, Billing, Finance and Third-Party Billing.
 //
 // Basic usage:
 //
@@ -24,7 +24,7 @@
 //	client.SetTokenResponse(tokenResp)
 package elleven
 
-// APIResponse is the standard response envelope returned by all ERPVoalle API endpoints.
+// APIResponse is the standard response envelope returned by all ERP Elleven API endpoints.
 // T is the type of the response payload.
 type APIResponse[T any] struct {
 	Success          bool         `json:"success"`

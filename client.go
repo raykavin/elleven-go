@@ -16,7 +16,7 @@ import (
 	"github.com/raykavin/ellevensdk/internal/retry"
 )
 
-// Client is the main ERPVoalle SDK client.
+// Client is the main ERP Elleven SDK client.
 // It is safe for concurrent use by multiple goroutines.
 //
 // Create a new Client with NewClient, then authenticate using one of the
@@ -35,7 +35,7 @@ type tokenState struct {
 	expiresAt    time.Time
 }
 
-// NewClient creates and returns a new ERPVoalle SDK client.
+// NewClient creates and returns a new ERP Elleven SDK client.
 // Returns an error if the configuration is invalid.
 //
 // Either BaseURL or both APIURL and AuthURL must be provided.
