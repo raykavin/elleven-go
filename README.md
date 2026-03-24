@@ -34,7 +34,7 @@ if err != nil {
     log.Fatal(err)
 }
 
-// 2. Authenticate (modern client_credentials flow)
+// 2. Authenticate (client_credentials flow)
 ctx := context.Background()
 tokenResp, err := client.AuthenticateClientCredentials(ctx, elleven.ClientCredentialsRequest{
     ClientID:     "your-client-id",
