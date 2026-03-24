@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/raykavin/ellevensdk/internal/retry"
+	"github.com/raykavin/elleven-go/internal/retry"
 )
 
 // Client is the main ERP Elleven SDK client.

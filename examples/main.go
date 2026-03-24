@@ -19,7 +19,7 @@ import (
 	"os"
 	"time"
 
-	elleven "github.com/raykavin/ellevensdk"
+	elleven "github.com/raykavin/elleven-go"
 )
 
 func main() {

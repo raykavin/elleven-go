@@ -1,8 +1,8 @@
 # Unofficial Elleven SDK
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/raykavin/ellevensdk.svg)](https://pkg.go.dev/github.com/raykavin/ellevensdk)
+[![Go Reference](https://pkg.go.dev/badge/github.com/raykavin/elleven-go.svg)](https://pkg.go.dev/github.com/raykavin/elleven-go)
 [![Go Version](https://img.shields.io/badge/go-1.22+-blue)](https://golang.org/dl/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/raykavin/ellevensdk)](https://goreportcard.com/report/github.com/raykavin/ellevensdk)
+[![Go Report Card](https://goreportcard.com/badge/github.com/raykavin/elleven-go)](https://goreportcard.com/report/github.com/raykavin/elleven-go)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Go SDK for the **Elleven ERP Third-Party API**.
@@ -14,7 +14,7 @@ Covers all documented modules: Authentication, Suite (People/Customers), CRM, Se
 ## Installation
 
 ```bash
-go get github.com/raykavin/ellevensdk
+go get github.com/raykavin/elleven-go
 ```
 
 Requires **Go 1.22+**. No external dependencies, uses only the Go standard library.
@@ -24,7 +24,7 @@ Requires **Go 1.22+**. No external dependencies, uses only the Go standard libra
 ## Quick Start
 
 ```go
-import elleven "github.com/raykavin/ellevensdk"
+import elleven "github.com/raykavin/elleven-go"
 
 // 1. Create the client
 client, err := elleven.NewClient(elleven.Config{
@@ -537,7 +537,7 @@ if err == nil {
 ## Running Tests
 
 ```bash
-cd ellevensdk
+cd elleven-go
 go test ./... -v
 ```
 
@@ -651,7 +651,7 @@ go test ./... -v -tags=integration
 
 ## Contributing
 
-Contributions to ellevensdk are welcome! Here are some ways you can help improve the project:
+Contributions to elleven-go are welcome! Here are some ways you can help improve the project:
 
 - **Report bugs and suggest features** by opening issues on GitHub
 - **Submit pull requests** with bug fixes or new features
@@ -660,14 +660,14 @@ Contributions to ellevensdk are welcome! Here are some ways you can help improve
 
 ## License
 
-ellevensdk is distributed under the **MIT License**.  
+elleven-go is distributed under the **MIT License**.  
 For complete license terms and conditions, see the [LICENSE](LICENSE) file in the repository.
 
 ---
 
 ## Contact
 
-For support, collaboration, or questions about ellevensdk:
+For support, collaboration, or questions about elleven-go:
 
 **Email**: [raykavin.meireles@gmail.com](mailto:raykavin.meireles@gmail.com)  
 **GitHub**: [@raykavin](https://github.com/raykavin)  
