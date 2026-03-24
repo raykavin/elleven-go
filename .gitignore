@@ -23,7 +23,8 @@ go.work.sum
 # Environment
 .env
 .env.dev
-.yml
+*.yml
+Dockerfile.dev
 !.env.example
 
 # IDE & editors
