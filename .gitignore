@@ -22,11 +22,14 @@ go.work.sum
 
 # Environment
 .env
+.env.dev
+.yml
 !.env.example
 
 # IDE & editors
 .vscode/
 .idea/
+.devcontainer/
 *.code-workspace
 *.swp
 *.swo
