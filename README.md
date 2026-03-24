@@ -2,7 +2,7 @@
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/raykavin/ellevensdk.svg)](https://pkg.go.dev/github.com/raykavin/ellevensdk)
 [![Go Version](https://img.shields.io/badge/go-1.22+-blue)](https://golang.org/dl/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/raykavin/ellevensdk.git)](https://goreportcard.com/report/github.com/raykavin/ellevensdk)
+[![Go Report Card](https://goreportcard.com/badge/github.com/raykavin/ellevensdk)](https://goreportcard.com/report/github.com/raykavin/ellevensdk)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Go SDK for the **Elleven ERP Third-Party API**.
