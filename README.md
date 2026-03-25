@@ -1,11 +1,11 @@
-# Unofficial Elleven SDK
+# Unofficial Elleven Third-Party API
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/raykavin/elleven-go.svg)](https://pkg.go.dev/github.com/raykavin/elleven-go)
 [![Go Version](https://img.shields.io/badge/go-1.22+-blue)](https://golang.org/dl/)
 [![Go Report Card](https://goreportcard.com/badge/github.com/raykavin/elleven-go)](https://goreportcard.com/report/github.com/raykavin/elleven-go)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Go SDK for the **Elleven ERP Third-Party API**.
+A Go library for the **Elleven ERP Third-Party API**.
 
 Covers all documented modules: Authentication, Suite (People/Customers), CRM, Service Desk, ISP/Telecom, Billing, Finance, and Third-Party Billing.
 
