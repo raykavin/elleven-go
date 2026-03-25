@@ -253,9 +253,7 @@ func (c *Client) GeneratePix(ctx context.Context, receivableID int) (*APIRespons
 // (body sent as JSON despite being a GET matches API documentation)
 func (c *Client) GetRenegotiationInfo(ctx context.Context, req RenegotiationInfoRequest) (*APIResponse[RenegotiationInfoResult], error) {
 	var result APIResponse[RenegotiationInfoResult]
-	// NOTE: API documentation shows a GET with a JSON body. This is non-standard but
-	// supported by many servers. We implement as-documented.
-	if err := c.doJSON(ctx, http.MethodGet,
+	if err := c.doJSON(ctx, http.MethodPost,
 		c.apiURL("/external/integrations/thirdparty/financial/getrenegotiationsinformations"),
 		req, &result); err != nil {
 		return nil, err

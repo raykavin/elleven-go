@@ -233,9 +233,6 @@ type ElectronicSignatureDocument struct {
 }
 
 // ResendSignatureRequest is the request body for resending an electronic signature.
-//
-// NOTE: The API documentation shows this endpoint as GET with a body, which is
-// non-standard HTTP. This SDK implements it as POST for compatibility with all
 // HTTP clients.
 type ResendSignatureRequest struct {
 	AssignmentID int `json:"assignmentId"`
@@ -385,9 +382,6 @@ func (c *Client) GetElectronicSignatureByContract(ctx context.Context, contractI
 }
 
 // ResendElectronicSignature resends an electronic signature document notification.
-//
-// NOTE: The API documentation describes this as a GET with a request body, which
-// is non-standard. This SDK sends it as a POST for broad HTTP client compatibility.
 //
 // POST /external/integrations/thirdparty/suite/electronicsignatures/resend
 func (c *Client) ResendElectronicSignature(ctx context.Context, req ResendSignatureRequest) error {

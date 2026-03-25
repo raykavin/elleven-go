@@ -66,7 +66,6 @@ type CreateContractResult struct {
 }
 
 // CreateContractResponse wraps the contract creation response.
-// NOTE: This endpoint uses non-standard casing ("Success" capitalized).
 type CreateContractResponse struct {
 	Success          bool                 `json:"Success"`
 	Message          *string              `json:"message"`
@@ -105,7 +104,7 @@ const (
 type CreateEventualValueRequest struct {
 	Type                           EventualValueType `json:"type"`
 	ContractID                     int               `json:"contractId"`
-	ContractItemID                 int               `json:"contracItemtId"` // Note: typo from API preserved
+	ContractItemID                 int               `json:"contracItemtId"` 
 	ContractConfigurationBillingID int               `json:"contractConfigurationBillingId"`
 	ServiceProductCode             string            `json:"serviceProductCode"`
 	MonthYearType                  int               `json:"monthYearType"`

@@ -177,9 +177,8 @@ type RemoveContractServicesRequest struct {
 }
 
 // ContractServiceOperationResult is the response for contract service operations.
-// Note: the API returns inconsistent casing (Sucess/True) mapped faithfully.
 type ContractServiceOperationResult struct {
-	Success bool   `json:"Sucess"` // Note: API uses "Sucess" (typo in API)
+	Success bool   `json:"Sucess"` 
 	Message string `json:"Message"`
 }
 
